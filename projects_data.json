@@ -1,0 +1,24 @@
+[
+  {
+    "id": 1,
+    "title": "Coffee Shop Sales Analytics Dashboard",
+    "category": "Data Analysis & Business Intelligence",
+    "description": "Comprehensive analysis of 65,000+ transactions to uncover actionable business insights for coffee shop optimization.",
+    "achievements": [
+      "Identified $50,000+ revenue opportunity through evening hour analysis",
+      "Discovered 45% revenue concentration in 3-hour morning window",
+      "Mapped product portfolio showing 65% sales from Coffee+Tea categories"
+    ],
+    "tools": [
+      "Tableau",
+      "Excel",
+      "Statistical Analysis",
+      "Business Intelligence"
+    ],
+    "projectLink": "#",
+    "githubLink": "#",
+    "emoji": "\u2615",
+    "created_at": "2025-12-20T21:19:29.288685",
+    "updated_at": "2025-12-20T21:19:29.289218"
+  }
+]

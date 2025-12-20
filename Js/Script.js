@@ -224,11 +224,10 @@ function closeAddProjectModal() {
 }
 
 // Handle add project form submission
-function handleAddProject(event) {
+async function handleAddProject(event) {
     event.preventDefault();
-    
+
     const formData = {
-        id: projects.length > 0 ? Math.max(...projects.map(p => p.id)) + 1 : 1,
         title: document.getElementById('projectTitle').value,
         category: document.getElementById('projectCategory').value || 'Uncategorized',
         description: document.getElementById('projectDescription').value,
@@ -246,19 +245,29 @@ function handleAddProject(event) {
         emoji: getRandomEmoji(),
         fullDescription: generateFullDescription(formData)
     };
-    
-    projects.push(formData);
-    loadProjects();
-    closeAddProjectModal();
-    
-    // Save to localStorage
-    saveProjectsToStorage();
-    
-    // Show success message
-    showNotification('Project added successfully!');
-    
-    // Scroll to projects section
-    document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+
+    try {
+        const response = await fetch('/api/projects', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+        const data = await response.json();
+        if (data.success) {
+            projects.push(data.data);
+            loadProjects();
+            closeAddProjectModal();
+            showNotification('Project added successfully!');
+            document.getElementById('projects').scrollIntoView({ behavior: 'smooth' });
+        } else {
+            showNotification('Error adding project');
+        }
+    } catch (error) {
+        console.error('Error adding project:', error);
+        showNotification('Error adding project');
+    }
 }
 
 // Generate full description for new project
@@ -291,12 +300,24 @@ function generateFullDescription(data) {
 }
 
 // Delete project
-function deleteProject(projectId) {
+async function deleteProject(projectId) {
     if (confirm('Are you sure you want to delete this project?')) {
-        projects = projects.filter(p => p.id !== projectId);
-        loadProjects();
-        saveProjectsToStorage();
-        showNotification('Project deleted successfully!');
+        try {
+            const response = await fetch(`/api/projects/${projectId}`, {
+                method: 'DELETE'
+            });
+            const data = await response.json();
+            if (data.success) {
+                projects = projects.filter(p => p.id !== projectId);
+                loadProjects();
+                showNotification('Project deleted successfully!');
+            } else {
+                showNotification('Error deleting project');
+            }
+        } catch (error) {
+            console.error('Error deleting project:', error);
+            showNotification('Error deleting project');
+        }
     }
 }
 
@@ -311,12 +332,23 @@ function saveProjectsToStorage() {
     localStorage.setItem('portfolioProjects', JSON.stringify(projects));
 }
 
-// Load projects from localStorage
-function loadProjectsFromStorage() {
-    const stored = localStorage.getItem('portfolioProjects');
-    if (stored) {
-        projects = JSON.parse(stored);
-        loadProjects();
+// Load projects from API
+async function loadProjectsFromAPI() {
+    try {
+        const response = await fetch('/api/projects');
+        const data = await response.json();
+        if (data.success) {
+            projects = data.data;
+            loadProjects();
+        }
+    } catch (error) {
+        console.error('Error loading projects:', error);
+        // Fallback to localStorage if API fails
+        const stored = localStorage.getItem('portfolioProjects');
+        if (stored) {
+            projects = JSON.parse(stored);
+            loadProjects();
+        }
     }
 }
 
@@ -393,8 +425,8 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Load projects from storage on initialization
-loadProjectsFromStorage();
+// Load projects from API on initialization
+loadProjectsFromAPI();
 
 // Add animation styles
 const style = document.createElement('style');
