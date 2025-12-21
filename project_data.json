@@ -1,0 +1,122 @@
+[
+    {
+        "id": 1,
+        "title": "E-Commerce Website",
+        "category": "Web Development",
+        "description": "A full-stack e-commerce platform with user authentication, product management, and payment integration.",
+        "achievements": [
+            "Built responsive frontend with React and Redux",
+            "Implemented secure backend with Node.js and MongoDB",
+            "Integrated Stripe for payment processing",
+            "Achieved 99% uptime with AWS deployment"
+        ],
+        "tools": ["React", "Node.js", "MongoDB", "Stripe API", "AWS"],
+        "projectLink": "https://example-ecommerce.com",
+        "githubLink": "https://github.com/username/ecommerce",
+        "emoji": "🛒",
+        "fullDescription": "<div class=\"project-detail-header\"><span class=\"project-detail-category\">Web Development</span><h2 class=\"project-detail-title\">E-Commerce Website</h2></div><div class=\"project-detail-section\"><h3>Project Overview</h3><p>A comprehensive e-commerce platform featuring user authentication, product catalog, shopping cart, and secure payment processing.</p></div><div class=\"project-detail-section\"><h3>Key Features</h3><ul class=\"project-achievements\"><li><strong>User Authentication:</strong> Secure login/signup with JWT tokens</li><li><strong>Product Management:</strong> Admin panel for adding/editing products</li><li><strong>Payment Integration:</strong> Stripe API for secure transactions</li><li><strong>Responsive Design:</strong> Mobile-first approach with Bootstrap</li></ul></div><div class=\"project-detail-section\"><h3>Technologies Used</h3><p>Frontend: React, Redux, Bootstrap. Backend: Node.js, Express, MongoDB. Deployment: AWS EC2, S3.</p></div>",
+        "image": "https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "created_at": "2023-01-15T10:00:00Z",
+        "updated_at": "2023-01-15T10:00:00Z"
+    },
+    {
+        "id": 2,
+        "title": "Data Visualization Dashboard",
+        "category": "Data Science",
+        "description": "Interactive dashboard for visualizing sales data with real-time updates and predictive analytics.",
+        "achievements": [
+            "Created interactive charts with D3.js",
+            "Implemented real-time data updates",
+            "Built predictive models with Python",
+            "Reduced decision-making time by 40%"
+        ],
+        "tools": ["Python", "D3.js", "Pandas", "Scikit-learn", "Flask"],
+        "projectLink": "https://example-dashboard.com",
+        "githubLink": "https://github.com/username/dashboard",
+        "emoji": "📊",
+        "fullDescription": "<div class=\"project-detail-header\"><span class=\"project-detail-category\">Data Science</span><h2 class=\"project-detail-title\">Data Visualization Dashboard</h2></div><div class=\"project-detail-section\"><h3>Project Overview</h3><p>An interactive dashboard that visualizes sales data, provides real-time updates, and includes predictive analytics for business insights.</p></div><div class=\"project-detail-section\"><h3>Key Features</h3><ul class=\"project-achievements\"><li><strong>Interactive Charts:</strong> Custom visualizations with D3.js</li><li><strong>Real-time Updates:</strong> WebSocket integration for live data</li><li><strong>Predictive Analytics:</strong> Machine learning models for forecasting</li><li><strong>Responsive Design:</strong> Works on all device sizes</li></ul></div><div class=\"project-detail-section\"><h3>Impact</h3><p>Reduced decision-making time by 40% and improved sales forecasting accuracy by 25%.</p></div>",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "created_at": "2023-02-20T14:30:00Z",
+        "updated_at": "2023-02-20T14:30:00Z"
+    },
+    {
+        "id": 3,
+        "title": "TaskFlow - Mobile Task Management",
+        "category": "Mobile Development",
+        "description": "A sleek, intuitive mobile application designed for efficient task management with advanced collaboration features and seamless synchronization.",
+        "achievements": [
+            "Built cross-platform app with 95% code reusability",
+            "Implemented real-time synchronization with conflict resolution",
+            "Integrated advanced notification system with smart scheduling",
+            "Achieved 4.8-star rating on both app stores"
+        ],
+        "tools": ["React Native", "Firebase", "Redux Toolkit", "Expo", "AsyncStorage"],
+        "projectLink": "https://example-app.com",
+        "githubLink": "https://github.com/username/taskflow",
+        "emoji": "📱",
+        "fullDescription": "<div class=\"project-detail-header\"><span class=\"project-detail-category\">Mobile Development</span><h2 class=\"project-detail-title\">TaskFlow - Mobile Task Management</h2></div><div class=\"project-detail-section\"><h3>Project Overview</h3><p>A comprehensive mobile application that revolutionizes task management with intelligent features, seamless collaboration, and enterprise-grade synchronization capabilities.</p></div><div class=\"project-detail-section\"><h3>Key Features</h3><ul class=\"project-achievements\"><li><strong>Smart Task Management:</strong> AI-powered task prioritization and deadline predictions</li><strong>Advanced Collaboration:</strong> Real-time team workspaces with role-based permissions</li><li><strong>Offline-First Architecture:</strong> Full functionality without internet connectivity</li><li><strong>Cross-Platform Excellence:</strong> Native performance on iOS and Android from single codebase</li></ul></div><div class=\"project-detail-section\"><h3>Technical Excellence</h3><p>Utilized React Native with Redux Toolkit for state management, Firebase for backend services, and implemented custom conflict resolution algorithms for seamless data synchronization.</p></div><div class=\"project-detail-section\"><h3>Market Success</h3><p>Successfully published on both App Store and Google Play, achieving over 15,000 downloads and maintaining a 4.8-star average rating through continuous user feedback integration.</p></div>",
+        "image": "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "created_at": "2023-03-10T09:15:00Z",
+        "updated_at": "2023-03-10T09:15:00Z"
+    },
+    {
+        "id": 4,
+        "title": "Portfolio Website",
+        "category": "Web Development",
+        "description": "A modern, responsive portfolio website showcasing creative projects with interactive animations and smooth user experience.",
+        "achievements": [
+            "Implemented advanced CSS animations and transitions",
+            "Created responsive design for all device sizes",
+            "Integrated dynamic project loading system",
+            "Optimized performance with lazy loading"
+        ],
+        "tools": ["HTML5", "CSS3", "JavaScript", "GSAP", "Responsive Design"],
+        "projectLink": "#",
+        "githubLink": "https://github.com/username/portfolio",
+        "emoji": "💼",
+        "fullDescription": "<div class=\"project-detail-header\"><span class=\"project-detail-category\">Web Development</span><h2 class=\"project-detail-title\">Portfolio Website</h2></div><div class=\"project-detail-section\"><h3>Project Overview</h3><p>A modern portfolio website featuring smooth animations, interactive elements, and professional presentation of creative work.</p></div><div class=\"project-detail-section\"><h3>Key Features</h3><ul class=\"project-achievements\"><li><strong>Interactive Animations:</strong> Smooth transitions and hover effects</li><li><strong>Responsive Design:</strong> Optimized for all screen sizes</li><li><strong>Dynamic Content:</strong> JSON-based project management system</li><li><strong>Performance Optimized:</strong> Fast loading with modern techniques</li></ul></div><div class=\"project-detail-section\"><h3>Technologies Used</h3><p>HTML5, CSS3, Vanilla JavaScript, GSAP animations, and responsive design principles.</p></div>",
+        "image": "https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "created_at": "2023-04-05T11:20:00Z",
+        "updated_at": "2023-04-05T11:20:00Z"
+    },
+    {
+        "id": 5,
+        "title": "Weather Analytics App",
+        "category": "Data Science",
+        "description": "Advanced weather prediction application with historical data analysis and climate pattern recognition.",
+        "achievements": [
+            "Developed machine learning models for weather prediction",
+            "Created interactive weather maps and visualizations",
+            "Implemented real-time weather data integration",
+            "Achieved 85% prediction accuracy"
+        ],
+        "tools": ["Python", "TensorFlow", "OpenWeather API", "Matplotlib", "Pandas"],
+        "projectLink": "https://weather-analytics-demo.com",
+        "githubLink": "https://github.com/username/weather-analytics",
+        "emoji": "🌤️",
+        "fullDescription": "<div class=\"project-detail-header\"><span class=\"project-detail-category\">Data Science</span><h2 class=\"project-detail-title\">Weather Analytics App</h2></div><div class=\"project-detail-section\"><h3>Project Overview</h3><p>An advanced weather analytics application that provides accurate predictions and detailed climate analysis using machine learning algorithms.</p></div><div class=\"project-detail-section\"><h3>Key Features</h3><ul class=\"project-achievements\"><li><strong>ML Predictions:</strong> 85% accurate weather forecasting</li><li><strong>Interactive Maps:</strong> Real-time weather visualization</li><li><strong>Historical Analysis:</strong> Climate pattern recognition</li><li><strong>API Integration:</strong> Multiple weather data sources</li></ul></div><div class=\"project-detail-section\"><h3>Technical Implementation</h3><p>Built with Python and TensorFlow, featuring custom ML models trained on historical weather data and integrated with multiple weather APIs for comprehensive coverage.</p></div>",
+        "image": "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "created_at": "2023-05-12T08:45:00Z",
+        "updated_at": "2023-05-12T08:45:00Z"
+    },
+    {
+        "id": 6,
+        "title": "Smart Home IoT System",
+        "category": "IoT Development",
+        "description": "Complete IoT solution for smart home automation with voice control, energy monitoring, and security features.",
+        "achievements": [
+            "Developed custom IoT firmware for multiple devices",
+            "Implemented secure cloud connectivity and data storage",
+            "Created mobile app for remote control and monitoring",
+            "Reduced energy consumption by 30%"
+        ],
+        "tools": ["Arduino", "Raspberry Pi", "MQTT", "Node-RED", "React Native"],
+        "projectLink": "https://smart-home-demo.com",
+        "githubLink": "https://github.com/username/smart-home-iot",
+        "emoji": "🏠",
+        "fullDescription": "<div class=\"project-detail-header\"><span class=\"project-detail-category\">IoT Development</span><h2 class=\"project-detail-title\">Smart Home IoT System</h2></div><div class=\"project-detail-section\"><h3>Project Overview</h3><p>A comprehensive IoT solution that transforms traditional homes into smart, automated environments with energy efficiency and security features.</p></div><div class=\"project-detail-section\"><h3>Key Features</h3><ul class=\"project-achievements\"><li><strong>Voice Control:</strong> Integration with Google Assistant and Alexa</li><li><strong>Energy Monitoring:</strong> Real-time consumption tracking and optimization</li><li><strong>Security System:</strong> Motion detection and remote surveillance</li><li><strong>Mobile Control:</strong> iOS and Android app for remote management</li></ul></div><div class=\"project-detail-section\"><h3>Hardware & Software</h3><p>Custom firmware for Arduino and ESP32 devices, Raspberry Pi central hub, MQTT protocol for communication, and cloud-based data storage with real-time synchronization.</p></div>",
+        "image": "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
+        "created_at": "2023-06-18T13:30:00Z",
+        "updated_at": "2023-06-18T13:30:00Z"
+    }
+]
