@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="Js/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>My Portfolio</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a passionate developer creating amazing web experiences.</p>
+            <a href="#projects" class="btn">View My Work</a>
+            <div class="scroll-indicator">
+                <span class="scroll-text">Scroll down to explore</span>
+                <div class="scroll-arrow">↓</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Nama: Muhamad Saefuloh</p>
+            <p>Usia: 22</p>
+            <p>Mahasiswa Universitas Muhammadiyah Bandung</p>
+            <p>Prodi: Manajemen</p>
+            <p>Keahlian: Data Processing and Data Visualization</p>
+            <p>Hobi: Jogging, Baca buku sosiology</p>
+            <p>Moto: Yesterday is history tomorrow is on progress but today is discipline and consistency</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill">HTML</div>
+                <div class="skill">CSS</div>
+                <div class="skill">JavaScript</div>
+                <div class="skill">React</div>
+                <div class="skill">Node.js</div>
+                <div class="skill">Python</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2>My Projects</h2>
+            <p class="section-description">Explore my latest work and creative solutions</p>
+            <div class="projects-controls">
+                <button class="btn btn-add-project" onclick="openAddProjectModal()">Add New Project</button>
+            </div>
+            <div class="projects-grid" id="projects-container">
+                <!-- Projects will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form id="contact-form">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Project Detail Modal -->
+    <div id="projectDetailModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeProjectDetailModal()">&times;</span>
+            <div id="projectDetailContent"></div>
+        </div>
+    </div>
+
+    <!-- Add Project Modal -->
+    <div id="addProjectModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeAddProjectModal()">&times;</span>
+            <h2>Add New Project</h2>
+            <form id="addProjectForm">
+                <input type="text" id="projectTitle" placeholder="Project Title" required>
+                <input type="text" id="projectCategory" placeholder="Category (e.g., Web Development)" required>
+                <textarea id="projectDescription" placeholder="Project Description" required></textarea>
+                <input type="text" id="achievement1" placeholder="Key Achievement 1">
+                <input type="text" id="achievement2" placeholder="Key Achievement 2">
+                <input type="text" id="achievement3" placeholder="Key Achievement 3">
+                <input type="text" id="projectTools" placeholder="Tools Used (comma-separated)">
+                <input type="url" id="projectLink" placeholder="Project Link">
+                <input type="url" id="githubLink" placeholder="GitHub Link">
+                <button type="submit" class="btn">Add Project</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="Js/Script.js"></script>
+</body>
+</html>
